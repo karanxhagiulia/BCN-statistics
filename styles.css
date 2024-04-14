@@ -13,20 +13,21 @@
 
 .background-image {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -5px;
+    left: 0px;
+    right: -20px;
     width: 100%;
     height: 100%;
     background-image: url("backgroundeixample.png");
     background-size: cover;
     background-position: center center;
-    opacity: 1;
+    opacity: 95%;
 }
 
 .title {
     position: absolute;
     top: 50%;
-    left: 9.5%;
+    left: 10%;
     transform: translateY(-50%);
     font-size: 50px;
     opacity: 1;
@@ -40,13 +41,19 @@
 /* Style for the "Data" word */
 .title .data-word {
     color: rgb(0, 0, 0); /* Set the color to black */
-    text-shadow: 2px 50px 4px rgba(12, 14, 15, 0.74); /* Add a shadow */
+    text-shadow: 2px 40px 4px rgba(12, 14, 15, 0.74); /* Add a shadow */
 }
 
 .subtitle {
-    color: white;
-    left: 10%;
+    color: rgb(255, 255, 255);
     font-family: 'Roboto';
+    font-size: 
+    40px;
+    font-weight: 500;
+    padding-top: 220px;
+    padding-left: 100px;
+    text-shadow: -5px 5px 4px rgba(32, 32, 32, 0.555); /* Add a shadow */
+
 
 }
 
@@ -86,8 +93,8 @@ p{
 
 .chart-container {
     width: 110%; /* Make each chart container take up full width */
-    margin-bottom: 20px; /* Add some space between charts */
     align-items: center;
+    overflow: visible;
 }
 
 /* For larger screens, adjust the width of chart containers */
@@ -150,18 +157,22 @@ p{
     animation-fill-mode: both;
 }
 
+
+
+
 .houses-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+    margin-left: 150px;
+    padding-bottom: 2%;
 }
 
 
-
+/* Adjust the size of the house icons */
 .fas.fa-home {
-    size: 10px; /* Adjust the size of the house icons as needed */
+    font-size: 50px;
+    margin: 0 10px; /* Add margin between the icons */
 }
+
 
 
 
@@ -176,8 +187,51 @@ p{
     }
 }
 
-/* Make the houses bigger */
-.fas.fa-home {
-    font-size: 200px; /* Adjust the size as needed */
+
+.scroll-animate {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
+
+.animate-scroll {
+    opacity: 1;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-scroll .house-animate {
+    animation: fadeInRight 1s ease forwards;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 10px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    z-index: 1; /* Ensure it's above the background image */
+}

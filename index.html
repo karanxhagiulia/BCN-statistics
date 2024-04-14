@@ -14,33 +14,39 @@
 <body>
     <div class="content">
         <div class="background-image"></div>
+        <div id="header">
+            <a href="https://karanxhagiulia.github.io" target="_blank">Thanks for watching! Check my portfolio for more visualizations.</a>
+        </div>
+        
         <div class="title animate__fadeInLeft">
             <h1>Barcelona in <span class="data-word animate__fadeInUp">Data</span></h1>
         </div>
-        <div class=" subtitle scroll-text animate-scroll-text">
-            <p>Discover the stories hidden behind the numbers.</p>
-        </div>
+
+          
         <div class="charts-container">
             <div class="charts">
                 <!-- Average yearly salary in Barcelona -->
                 
                 
-            <h2> The average yearly salary in Barcelona is: <span class="highlight"> 33,837.32€</span></h2>
-            <h2> This translates to roughly<span class="highlight"> 2,123€/mo</span> for 12 months.</h2>
+                <h2 class="scroll-animate">The average yearly salary in Barcelona is: <span class="highlight"> 33,837.32€</span></h2>
+                <h2 class="scroll-animate">This translates to roughly <span class="highlight">2,123€/mo</span> for 12 months.</h2>
 
-                <p>  Barcelona's average salary has remained relatively stable over the past decade..</p>
+                
+
+                <p>  Barcelona's average salary has remained relatively stable over the past decade.</p>
                 <div class="chart-container" style="width: 60%;">
                     <iframe title="Average yearly salary in Barcelona" aria-label="Interactive line chart" id="datawrapper-chart-xOtmi" src="https://datawrapper.dwcdn.net/xOtmi/2/" scrolling="no" frameborder="0" style="width: 100%; border: none;" height="303" data-external="1"></iframe>
                 </div>
+
+                <!-- Average yearly salary per district -->
+                <div class="chart-container" style="width: 50%; margin-left: 2%; margin-top: 4%;">
+                    <iframe title="Average yearly salary per district" aria-label="Map" id="datawrapper-chart-jGjq7" src="https://datawrapper.dwcdn.net/jGjq7/2/" scrolling="no" frameborder="0" style="width: 100%; border: none;" height="749" data-external="1"></iframe>
+                </div>
                 <!-- Button to show charts -->
-                    <button id="showChartsButton">Want to know more about the salary info?</button>
+                    <button id="showChartsButton">Want to know more about the salary data by age?</button>
                 
                 <!-- Container for the charts -->
                     <div id="chartContainer" style="display: none;">
-                        <!-- Average yearly salary per district -->
-                        <div class="chart-container" style="width: 55%;">
-                            <iframe title="Average yearly salary per district" aria-label="Map" id="datawrapper-chart-jGjq7" src="https://datawrapper.dwcdn.net/jGjq7/2/" scrolling="no" frameborder="0" style="width: 100%; border: none;" height="749" data-external="1"></iframe>
-                        </div>
 
                         <!-- Average yearly salary per age -->
                         <div class="chart-container" style="width: 65%;">
@@ -50,41 +56,37 @@
                 <p> But what about the cost of living?</p>
 
                 <!-- Average monthly rental price in Barcelona -->
-                <div class="chart-container" style="width: 59%;">
+                <div class="chart-container" style="width: 57%; margin-left: 2%;">
                     <iframe title="Average monthly rental price in Barcelona" aria-label="Column Chart" id="datawrapper-chart-sTJlZ" src="https://datawrapper.dwcdn.net/sTJlZ/2/" scrolling="no" frameborder="0" style="width: 100%; border: none;" height="517" data-external="1"></iframe>
                 </div>
                 <!-- YoY Rent and Salary change -->
-                <div class="chart-container" style="width: 65%;">
+                <div class="chart-container" style="width: 65%; margin-top: 4%; margin-bottom: 4%;">
                     <iframe title="YoY Rent and Salary change" aria-label="Interactive line chart" id="datawrapper-chart-hj4CL" src="https://datawrapper.dwcdn.net/hj4CL/2/" scrolling="no" frameborder="0" style="width: 100%; border: none;" height="476" data-external="1"></iframe>
                 </div>
 
-                <h2>Is it simply a matter of <span class="highlight">demand</span> and <span class="highlight">supply</span>? <a href="https://www.eldiario.es/economia/hay-viviendas-vacias-mapa-casas-habitar-municipio-municipio_1_10341710.html"><br>Interestingly, almost 10% of the houses available in Barcelona are empty.</a>.</h2>
+                <h2>Is it simply a matter of <span class="highlight" >demand</span> and <span class="highlight">supply</span>? <a href="https://www.eldiario.es/economia/hay-viviendas-vacias-mapa-casas-habitar-municipio-municipio_1_10341710.html"><br>Interestingly, almost 10% of the houses available in Barcelona are empty.</a>.</h2>
 
                 <!-- Rental contracts vs Average monthly rental price -->
-                <div class="chart-container" style="width: 70%;">
+                <div class="chart-container" style="width: 70%;margin-top: 4%;">
                     <iframe title="Rental contracts vs Average monthly rental price" aria-label="Split Bars" id="datawrapper-chart-0R6PH" src="https://datawrapper.dwcdn.net/0R6PH/1/" scrolling="no" frameborder="0" style="width: 100%; min-width: 100% !important; border: none;" height="405" data-external="1"></iframe>
                 </div>
 
                 <!-- Active Population vs Average monthly rent -->
-                <div class="chart-container" style="width: 70%;">
+                <div class="chart-container" style="width: 70%; margin-top: 4%;">
                     <iframe title="Active Population vs Average monthly rent" aria-label="Interactive line chart" id="datawrapper-chart-BIECV" src="https://datawrapper.dwcdn.net/BIECV/2/" scrolling="no" frameborder="0" style="width: 100%; min-width: 100% !important; border: none;" height="545" data-external="1"></iframe>
                 </div>
 
                 <!-- Active Population vs Average monthly rent, YoY change -->
-                <div class="chart-container" style="width: 70%;">
+                <div class="chart-container" style="width: 70%; margin-top: -10px;">
                     <iframe title="Active Population vs Average monthly rent, YoY change" aria-label="Bullet Bars" id="datawrapper-chart-zdvRM" src="https://datawrapper.dwcdn.net/zdvRM/1/" scrolling="no" frameborder="0" style="width: 100%; min-width: 100% !important; border: none;" height="545" data-external="1"></iframe>
                 </div>
 
-                <!-- How much does a house cost? -->
-                <div class="chart-container" style="width: 60%;">
-                    <iframe title="How much does a house cost?" aria-label="Range Plot" id="datawrapper-chart-NHLzq" src="https://datawrapper.dwcdn.net/NHLzq/1/" scrolling="no" frameborder="0" style="width: 100%; border: none;" height="352" data-external="1"></iframe>
-                </div>
 
                 <!-- Rental contracts and Houses sold in Barcelona -->
-                <div class="chart-container" style="width: 70%;">
+                <div class="chart-container" style="width: 70%;margin-top: 4%;">
                     <iframe title="Rental contracts and Houses sold in Barcelona" aria-label="Interactive line chart" id="datawrapper-chart-GKhLv" src="https://datawrapper.dwcdn.net/GKhLv/3/" scrolling="no" frameborder="0" style="width: 100%; border: none;" height="524" data-external="1"></iframe>
                 </div>
-                <p>On average, for every five houses sold in Barcelona, individuals buy four while one is acquired by a legal entity.</p>
+                <p style="margin-left: 7%;">On average, out of five houses sold in Barcelona, one is bought by a legal entity.</p>
                 <div class="houses-container" >
                     <div class="house-animate" style="animation-delay: 0.2s;"><i class="fas fa-home" style="color: #87CEEB;"></i></div>
                     <div class="house-animate" style="animation-delay: 0.4s;"><i class="fas fa-home" style="color: #87CEEB;"></i></div>
@@ -94,8 +96,13 @@
                 </div>
 
                 <!-- Who is buying the houses? -->
-                <div class="chart-container" style="width: 50%;">
+                <div class="chart-container" style="width: 50%; margin-top: 20px; margin-left: 50px;">
                     <iframe title="Who is buying the houses?" aria-label="Stacked Bars" id="datawrapper-chart-3TMam" src="https://datawrapper.dwcdn.net/3TMam/1/" scrolling="no" frameborder="0" style="width: 100%; border: none;" height="435" data-external="1"></iframe>
+                </div>
+
+                <!-- How much does a house cost? -->
+                <div class="chart-container" style="width: 60%; margin-top: 20px;">
+                    <iframe title="How much does a house cost?" aria-label="Range Plot" id="datawrapper-chart-NHLzq" src="https://datawrapper.dwcdn.net/NHLzq/1/" scrolling="no" frameborder="0" style="width: 100%; border: none;" height="352" data-external="1"></iframe>
                 </div>
                 <p>If you want to learn more about Barcelona's data portal, check <a href="https://portaldades.ajuntament.barcelona.cat/en">here</a>.</p>
 
